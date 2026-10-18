@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Portfolio</h1>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile/Hero Section -->
+    <header id="hero" class="section hero">
+        <div class="container hero-layout">
+            <div class="hero-text reveal">
+                <p class="greeting">Hello, I'm</p>
+                <h1>Yashdeep</h1>
+                <h2 class="gradient-text">Full Stack Web Developer</h2>
+                <p class="subtitle">I craft high-performance, beautiful digital experiences that live on the web.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">See My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image reveal">
+                <div class="avatar-placeholder">
+                    <i class="fa-solid fa-user-astronaut"></i>
+                </div>
+                <div class="glow-ring"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="section bg-light">
+        <div class="container reveal">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I am a passionate web developer with a keen eye for clean design and efficient architecture. I specialize in building responsive, accessible, and interactive user interfaces using modern web technologies. When I'm not writing code, you can find me exploring new tech trends, contributing to open-source, or hiking the local trails.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">My Toolkit</h2>
+            <div class="skills-grid">
+                <div class="skill-pill"><i class="fa-brands fa-html5"></i> HTML5</div>
+                <div class="skill-pill"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+                <div class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript</div>
+                <div class="skill-pill"><i class="fa-brands fa-react"></i> React</div>
+                <div class="skill-pill"><i class="fa-brands fa-node-js"></i> Node.js</div>
+                <div class="skill-pill"><i class="fa-brands fa-github"></i> Git/GitHub</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-light">
+        <div class="container reveal">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fa-solid fa-cloud-sun"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather Application</h3>
+                        <p>A dynamic web app that fetches real-time meteorological data using RESTful APIs, featuring dynamic backgrounds based on the weather.</p>
+                        <a href="#" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Master</h3>
+                        <p>A minimalist task management tool built with vanilla JavaScript, utilizing local storage for data persistence and CSS for smooth animations.</p>
+                        <a href="#" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-card">
+                <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                <div class="contact-details">
+                    <p><strong>Name:</strong> Jane Doe</p>
+                    <p><strong>Email:</strong> jane.doe@example.com</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                </div>
+                <a href="mailto:jane.doe@example.com" class="btn btn-primary" style="margin-top: 20px;">Say Hello</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Designed & Built by Jane Doe.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
